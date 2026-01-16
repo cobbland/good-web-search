@@ -22,7 +22,7 @@ Click the extension icon and toggle the checkbox to turn the extension off and o
 
 ## To Do
 
-- [ ] Refactor code, following [the API](https://developer.chrome.com/docs/extensions/reference/api)
+- [ ] Refactor code (following [the API](https://developer.chrome.com/docs/extensions/reference/api))
 - [ ] Make work for more search engines
 - [x] Add additional adjustable settings
     - [x] Toggle web mode
