@@ -1,4 +1,4 @@
-# Good Web Search
+# Good Web Search ![](/extension/icon128.png)
 
 Good Web Search is an extension for Chromium-based browsers that automatically adjusts search parameters for better results. It currently works for [Google](https://www.google.com) and (mostly works for) [Ecosia](https://www.ecosia.org/).
 
