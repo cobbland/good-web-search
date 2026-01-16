@@ -10,6 +10,12 @@ Good Web Search is an extension for Chromium-based browsers that automatically a
 - Drag and drop the extension file onto the page.
 - Review the extension and select "Keep this extension".
 
+## Updating
+
+- Download the [latest release](https://github.com/cobbland/good-web-search/releases/latest).
+- Open web browser and navigate to `chrome://extensions/` (or whatever the extension page is for your chromium-based browser).
+- Drag and drop the extension file onto the page.
+
 ## Use
 
 Click the extension icon and toggle the checkbox to turn the extension off and on.
