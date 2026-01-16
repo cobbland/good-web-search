@@ -1,6 +1,6 @@
 # Good Web Search
 
-Good web search is an extension for Chromium-based browsers that automatically appends "after:1983-01-01 before:2023-01-01" to searches and forces web mode. It currently works for [Google](https://www.google.com) and (mostly works for) [Ecosia](https://www.ecosia.org/).
+Good Web Search is an extension for Chromium-based browsers that automatically appends "after:1983-01-01 before:2023-01-01" to searches and forces web mode. It currently works for [Google](https://www.google.com) and (mostly works for) [Ecosia](https://www.ecosia.org/).
 
 ## Installation
 
