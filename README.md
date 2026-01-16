@@ -20,7 +20,11 @@ Good Web Search is an extension for Chromium-based browsers that automatically a
 
 ## Use
 
-Click the extension icon and toggle the checkbox to turn the extension off and on.
+Click the extension icon and toggle the checkboxes to turn features off and on:
+
+- "'Web' search" forces Google search to use web mode
+- "Before 2023" appends "before:2023" to search queries
+- "No AI" appends "-ai" to search queries
 
 ## To Do
 
