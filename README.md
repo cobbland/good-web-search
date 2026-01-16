@@ -4,11 +4,11 @@ Good Web Search is an extension for Chromium-based browsers that automatically a
 
 ## Installation
 
-- Download the [latest release](https://github.com/cobbland/good-web-search/releases/latest).
-- Open web browser and navigate to `chrome://extensions/` (or whatever the extension page is for your chromium-based browser).
-- Toggle the “Developer mode” switch to enable.
-- Drag and drop the extension file onto the page.
-- Review the extension and select "Keep this extension".
+- Download the [latest release](https://github.com/cobbland/good-web-search/releases/latest)
+- Open web browser and navigate to `chrome://extensions/` (or whatever the extension page is for your chromium-based browser of choice)
+- Toggle the “Developer mode” switch to enable
+- Drag and drop the extension file onto the page
+- Review the extension and select "Keep this extension"
 
 ## Updating
 
