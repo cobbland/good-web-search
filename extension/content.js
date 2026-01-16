@@ -10,21 +10,26 @@
     const q = url.searchParams.get('q');
 
     if (!q) return;
-    if (url.searchParams.get('good') === 'true') return;
+
+    const cleanQ = q
+        .replace(/\s+-ai\b/g, '')
+        .replace(/\s+before:2023\b/g, '')
+        .trim();
+
+    let finalQ = cleanQ +
+        `${noAI ? ' -ai' : ''}${before ? ' before:2023' : ''}`
+
+
+    if (finalQ === q) return;
 
     const newUrl = new URL(location.origin + location.pathname);
 
-    newUrl.searchParams.set(
-        'q',
-        `${q}${noAI ? ' -ai' : ''}${before ? ' before:2023' : ''}`
-    );
+    newUrl.searchParams.set('q', finalQ);
 
     if (webMode) {
         newUrl.searchParams.set('sa', 'X');
         newUrl.searchParams.set('udm', '14');
     }
-
-    newUrl.searchParams.set('good', 'true');
 
     location.replace(newUrl.toString());
 })();
