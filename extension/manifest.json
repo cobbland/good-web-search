@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "Good Web Search",
+  "version": "0.1",
+  "description": "Automatically appends 'after:1983-01-01 before:2023-01-01' to searches and forces web mode",
+  "permissions": ["storage"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.google.com/*", "http://www.google.com/*",
+        "https://www.ecosia.org/*", "http://www.ecosia.org/*"
+      ],
+      "js": ["content.js"],
+      "run_at": "document_start"
+    }
+  ]
+}
