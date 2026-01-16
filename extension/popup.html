@@ -4,22 +4,40 @@
   <style>
     body { font-family: sans-serif; width: 170px; padding: 6px; }
     h1 { font-size: 16px; margin-top: 0; }
+    h2 { font-size: 14px; }
+    ul { list-style-type: none; padding-left: 0; margin-bottom: 16px; }
+    li { font-weight: bold; }
+    li + li { margin-top: 4px; }
     label { cursor: pointer; }
+    input:disabled + span { color: lightgrey; }
   </style>
 </head>
 <body>
   <h1>Good Web Search</h1>
   <label>
-    <input type="checkbox" id="web"> "Web" search
+    <input type="checkbox" id="web">
+    <span> "Web" search</span>
   </label>
   <br>
   <label>
-    <input type="checkbox" id="date"> Before 2023
+    <input type="checkbox" id="date">
+    <span>  Before 2023</span>
   </label>
   <br>
   <label>
-    <input type="checkbox" id="ai"> No AI
+    <input type="checkbox" id="ai">
+    <span> No AI</span>
   </label>
+  <h2>Consider...</h2>
+  <ul>
+    <li><a href="https://www.wikipedia.org">Wikipedia</a></li>
+    <li><a href="https://stackoverflow.com/">Stack Overflow</a></li>
+  </ul>
+  <hr>
+  <div id="popup-footer">
+    <a href="https://cobb.land/">cobb.land</a>
+    <a href="https://github.com/cobbland/good-web-search">github</a>
+  </div>
   <script src="popup.js"></script>
 </body>
 </html>

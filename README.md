@@ -2,7 +2,7 @@
 
 # Good Web Search
 
-Good Web Search is an extension for Chromium-based browsers that automatically adjusts search parameters for better results. It currently works for [Google](https://www.google.com) and (mostly works for) [Ecosia](https://www.ecosia.org/).
+Good Web Search is an extension for Chromium-based browsers that automatically adjusts search parameters for better results. It currently works for Google, with some features working for [Ecosia](https://www.ecosia.org/), [StartPage](https://www.startpage.com), [DuckDuckGo](https://duckduckgo.com), Brave, and Bing.
 
 ## Installation
 
@@ -20,7 +20,7 @@ Good Web Search is an extension for Chromium-based browsers that automatically a
 
 ## Use
 
-Click the extension icon and toggle the checkboxes to turn features off and on:
+Click the extension icon and toggle the checkboxes to turn features off and on. Disabled options are not available for current search engine.
 
 - "'Web' search" forces Google search to use web mode
 - "Before 2023" appends "before:2023" to search queries

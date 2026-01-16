@@ -1,9 +1,9 @@
 {
   "manifest_version": 3,
   "name": "Good Web Search",
-  "version": "1.1.1",
+  "version": "1.2.0",
   "description": "Adjusts search parameters for better results",
-  "permissions": ["storage"],
+  "permissions": ["storage", "tabs"],
   "background": {
     "service_worker": "background.js"
   },
@@ -25,7 +25,11 @@
     {
       "matches": [
         "https://www.google.com/*", "http://www.google.com/*",
-        "https://www.ecosia.org/*", "http://www.ecosia.org/*"
+        "https://www.ecosia.org/*", "http://www.ecosia.org/*",
+        "https://www.startpage.com/*", "http://www.startpage.com/*",
+        "https://duckduckgo.com/*", "http://duckduckgo.com/*",
+        "https://www.bing.com/*", "http://www.bing.com/*",
+        "https://search.brave.com/*", "http://search.brave.com/*"
       ],
       "js": ["content.js"],
       "run_at": "document_start"
