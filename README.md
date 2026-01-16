@@ -22,6 +22,7 @@ Click the extension icon and toggle the checkbox to turn the extension off and o
 
 ## Future Improvements
 
+- [ ] Refactor code, following [the API](https://developer.chrome.com/docs/extensions/reference/api)
 - [ ] Make work for more search engines
 - [ ] Add additional adjustable settings
 - [ ] Other stuff probably idk
