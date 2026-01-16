@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Good Web Search",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Adjusts search parameters for better results",
   "permissions": ["storage", "tabs"],
   "background": {
