@@ -4,7 +4,7 @@ Good web search is a Chrome extension that automatically appends "after:1983-01-
 
 ## Installation
 
-- Download the latest release.
+- Download the [latest release](https://github.com/cobbland/good-web-search/releases/latest).
 - Open Chrome and navigate to `chrome://extensions/`.
 - Toggle the “Developer mode” switch to enable.
 - Drag and drop the extension file onto the page.
