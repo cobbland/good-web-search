@@ -1,9 +1,12 @@
 {
   "manifest_version": 3,
   "name": "Good Web Search",
-  "version": "1.0.0",
-  "description": "Automatically appends 'after:1983-01-01 before:2023-01-01' to searches and forces web mode",
+  "version": "1.1.0",
+  "description": "Adjusts search parameters for better results",
   "permissions": ["storage"],
+  "background": {
+    "service_worker": "background.js"
+  },
   "action": {
     "default_popup": "popup.html",
     "default_icon": {

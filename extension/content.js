@@ -1,28 +1,30 @@
-(() => {
-    const START_DATE = '1983-01-01';
-    const END_DATE   = '2023-01-01';
+(async () => {
+    const { webEnabled, dateEnabled, aiEnabled } =
+        await chrome.storage.local.get(['webEnabled', 'dateEnabled', 'aiEnabled']);
 
-    // Check toggle state from chrome.storage
-    chrome.storage.local.get(['enabled'], ({enabled}) => {
-        if (enabled === false) return; // user turned it off
+    const webMode = webEnabled  === true;
+    const before  = dateEnabled === true;
+    const noAI    = aiEnabled   === true;
 
-        const url = new URL(location.href);
-        const q = url.searchParams.get('q');
+    const url = new URL(location.href);
+    const q = url.searchParams.get('q');
 
-        // Only act on actual searches
-        if (!q) return;
+    if (!q) return;
+    if (url.searchParams.get('good') === 'true') return;
 
-        // Prevent infinite reload
-        if (q.includes(START_DATE) && q.includes(END_DATE) &&
-            url.searchParams.get('sa') === 'X' && url.searchParams.get('udm') === '14') return;
+    const newUrl = new URL(location.origin + location.pathname);
 
-        // Force exact parameters
-        const newUrl = new URL(location.origin + location.pathname);
-        newUrl.searchParams.set('q', `${q} after:${START_DATE} before:${END_DATE}`);
+    newUrl.searchParams.set(
+        'q',
+        `${q}${noAI ? ' -ai' : ''}${before ? ' before:2023' : ''}`
+    );
+
+    if (webMode) {
         newUrl.searchParams.set('sa', 'X');
         newUrl.searchParams.set('udm', '14');
+    }
 
-        // Redirect
-        location.replace(newUrl.toString());
-    });
+    newUrl.searchParams.set('good', 'true');
+
+    location.replace(newUrl.toString());
 })();

@@ -1,11 +1,23 @@
-const checkbox = document.getElementById('toggle');
+const web = document.getElementById('web');
+const date = document.getElementById('date');
+const ai = document.getElementById('ai');
 
-// Load current state
-chrome.storage.local.get(['enabled'], ({enabled}) => {
-    checkbox.checked = enabled !== false; // default: on
-});
+chrome.storage.local.get(
+  ['webEnabled', 'dateEnabled', 'aiEnabled'],
+  ({ webEnabled, dateEnabled, aiEnabled }) => {
+    web.checked  = webEnabled !== false;
+    date.checked = dateEnabled !== false;
+    ai.checked   = aiEnabled !== false;
+  }
+);
 
 // Update state when toggled
-checkbox.addEventListener('change', () => {
-    chrome.storage.local.set({enabled: checkbox.checked});
+[web, date, ai].forEach(checkbox => {
+  checkbox.addEventListener('change', () => {
+    chrome.storage.local.set({
+      webEnabled: web.checked,
+      dateEnabled: date.checked,
+      aiEnabled: ai.checked
+    });
+  });
 });
