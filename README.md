@@ -13,3 +13,9 @@ Good web search is a Chrome extension that automatically appends "after:1983-01-
 ## Use
 
 Click the extension icon and toggle the checkbox to turn the extension off and on.
+
+## Future Improvements
+
+- [ ] Make work for more search engines
+- [ ] Add additional adjustable settings
+- [ ] Other stuff probably idk
