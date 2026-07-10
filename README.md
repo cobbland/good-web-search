@@ -70,7 +70,6 @@ Good Web Search is currently (2026-06-22) tested and working with:
 
 ## Roadmap
 
-- Refactor code (more closely following browser extension APIs)
 - Fix support for [StartPage](https://www.startpage.com)
 
 ## Contribute
